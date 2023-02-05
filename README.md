@@ -25,7 +25,7 @@ I learned a lot about AWS, and I now have a decent grasp of how chat support bot
 ## What's next for TravelBot
 I thought it would be cool if I added another intent to the Lex bot to fetch ticket prices for the country you are interested in.
 
-<br><br>
+<br>
 ### Datasets used:
 https://github.com/ilyankou/passport-index-dataset <br>
 https://ourworldindata.org/explorers/coronavirus-data-explorer <br>
