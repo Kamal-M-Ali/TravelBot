@@ -1,0 +1,200 @@
+from,destination,req
+United States,albania,360
+United States,algeria,visa required
+United States,andorra,90
+United States,angola,visa on arrival
+United States,antigua and barbuda,180
+United States,argentina,90
+United States,armenia,180
+United States,australia,e-visa
+United States,austria,90
+United States,azerbaijan,e-visa
+United States,bahamas,240
+United States,bahrain,visa on arrival
+United States,bangladesh,visa on arrival
+United States,barbados,180
+United States,belarus,visa required
+United States,belgium,90
+United States,belize,180
+United States,benin,e-visa
+United States,bhutan,visa required
+United States,bolivia,visa on arrival
+United States,bosnia and herzegovina,90
+United States,botswana,90
+United States,brazil,90
+United States,brunei,90
+United States,bulgaria,90
+United States,burkina faso,visa on arrival
+United States,burundi,visa on arrival
+United States,cambodia,e-visa
+United States,cameroon,visa required
+United States,canada,180
+United States,cape verde,30
+United States,central african republic,180
+United States,chad,visa required
+United States,chile,90
+United States,china,visa required
+United States,colombia,90
+United States,comoros,visa on arrival
+United States,congo,visa required
+United States,dr congo,e-visa
+United States,costa rica,90
+United States,ivory coast,e-visa
+United States,croatia,90
+United States,cuba,visa required
+United States,cyprus,90
+United States,czech republic,90
+United States,denmark,90
+United States,djibouti,e-visa
+United States,dominica,180
+United States,dominican republic,visa free
+United States,ecuador,90
+United States,egypt,visa on arrival
+United States,el salvador,90
+United States,equatorial guinea,visa free
+United States,eritrea,visa required
+United States,estonia,90
+United States,swaziland,30
+United States,ethiopia,e-visa
+United States,fiji,120
+United States,finland,90
+United States,france,90
+United States,gabon,e-visa
+United States,gambia,visa on arrival
+United States,georgia,360
+United States,germany,90
+United States,ghana,visa required
+United States,greece,90
+United States,grenada,90
+United States,guatemala,90
+United States,guinea,e-visa
+United States,guinea-bissau,visa on arrival
+United States,guyana,90
+United States,haiti,90
+United States,honduras,90
+United States,hong kong,90
+United States,hungary,90
+United States,iceland,90
+United States,india,e-visa
+United States,indonesia,visa on arrival
+United States,iran,visa required
+United States,iraq,visa on arrival
+United States,ireland,90
+United States,israel,90
+United States,italy,90
+United States,jamaica,180
+United States,japan,90
+United States,jordan,visa on arrival
+United States,kazakhstan,30
+United States,kenya,e-visa
+United States,kiribati,120
+United States,kosovo,90
+United States,kuwait,e-visa
+United States,kyrgyzstan,60
+United States,laos,visa on arrival
+United States,latvia,90
+United States,lebanon,visa on arrival
+United States,lesotho,visa free
+United States,liberia,visa required
+United States,libya,visa required
+United States,liechtenstein,90
+United States,lithuania,90
+United States,luxembourg,90
+United States,macao,30
+United States,madagascar,visa on arrival
+United States,malawi,visa on arrival
+United States,malaysia,90
+United States,maldives,visa on arrival
+United States,mali,visa required
+United States,malta,90
+United States,marshall islands,visa free
+United States,mauritania,visa on arrival
+United States,mauritius,90
+United States,mexico,180
+United States,micronesia,30
+United States,moldova,90
+United States,monaco,90
+United States,mongolia,90
+United States,montenegro,90
+United States,morocco,90
+United States,mozambique,visa on arrival
+United States,myanmar,e-visa
+United States,namibia,90
+United States,nauru,visa required
+United States,nepal,visa on arrival
+United States,netherlands,90
+United States,new zealand,e-visa
+United States,nicaragua,90
+United States,niger,visa required
+United States,nigeria,visa on arrival
+United States,north korea,visa required
+United States,north macedonia,90
+United States,norway,90
+United States,oman,visa on arrival
+United States,pakistan,e-visa
+United States,palau,360
+United States,palestine,visa free
+United States,panama,180
+United States,papua new guinea,e-visa
+United States,paraguay,90
+United States,peru,180
+United States,philippines,30
+United States,poland,90
+United States,portugal,90
+United States,qatar,30
+United States,romania,90
+United States,russia,visa required
+United States,rwanda,visa on arrival
+United States,saint kitts and nevis,180
+United States,saint lucia,42
+United States,samoa,visa on arrival
+United States,san marino,90
+United States,sao tome and principe,15
+United States,saudi arabia,visa on arrival
+United States,senegal,90
+United States,serbia,90
+United States,seychelles,90
+United States,sierra leone,visa on arrival
+United States,singapore,90
+United States,slovakia,90
+United States,slovenia,90
+United States,solomon islands,visa on arrival
+United States,somalia,visa on arrival
+United States,south africa,90
+United States,south korea,e-visa
+United States,south sudan,e-visa
+United States,spain,90
+United States,sri lanka,e-visa
+United States,saint vincent and the grenadines,30
+United States,sudan,visa required
+United States,suriname,e-visa
+United States,sweden,90
+United States,switzerland,90
+United States,syria,visa required
+United States,taiwan,90
+United States,tajikistan,30
+United States,tanzania,visa on arrival
+United States,thailand,45
+United States,timor-leste,visa on arrival
+United States,togo,visa on arrival
+United States,tonga,visa on arrival
+United States,trinidad and tobago,90
+United States,tunisia,120
+United States,turkmenistan,visa required
+United States,tuvalu,visa on arrival
+United States,turkey,e-visa
+United States,uganda,e-visa
+United States,ukraine,90
+United States,united arab emirates,visa on arrival
+United States,united kingdom,180
+United States,united states,-1
+United States,uruguay,90
+United States,uzbekistan,e-visa
+United States,vanuatu,30
+United States,vatican,90
+United States,venezuela,visa required
+United States,vietnam,e-visa
+United States,yemen,visa required
+United States,zambia,90
+United States,zimbabwe,visa on arrival
+United States,afghanistan,visa required
