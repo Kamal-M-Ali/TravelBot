@@ -17,7 +17,7 @@ I store the datasets (4 .csv files) on an AWS S3 bucket. The chatbot logic is ma
 3. The bug/challenge that took me the longest to fix was: Why were my travel reports being generated (w/o errors in AWS) but I was seeing nothing in iMessage? Initially, I thought I was hitting a SMS character limit. I eventually narrowed it down to the word "visa." For some reason, whenever I included that word in the text messages everything would break. So that's why the bot says "wisa" instead.
 
 ## Accomplishments that I'm proud of
-This is my first time attending a hackathon, and I also decided to do a solo project. Managing my time was difficult, but I'm quite happy with how well it turned out, all things considered.
+This is my first time attending a hackathon, and I also decided to do a solo project. Managing my time was difficult, but I'm really happy with how well it turned out, all things considered.
 
 ## What I learned
 I learned a lot about various different AWS services, and I now have a better understanding of how chat support bots are implemented by various companies. 
