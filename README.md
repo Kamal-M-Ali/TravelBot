@@ -15,7 +15,7 @@ I initially wanted the chat bot to respond to various individual questions while
 The thing I am most disappointed with is the SMS character limit.
 
 ## Accomplishments that I'm proud of
-This is my first time attending a hackathon, and I also decided to do a solo project. I'm quite happy with how well it turned out all things considered.
+This is my first time attending a hackathon, and I also decided to do a solo project. Managing my time was difficult, but I'm quite happy with how well it turned out, all things considered.
 
 ## What I learned
 I learned a lot about various different AWS services, and I now have a better understanding of how chat support bots are implemented by various companies. 
