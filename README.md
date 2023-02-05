@@ -12,7 +12,7 @@ I store the datasets (4 .csv files) on an AWS S3 bucket. The chatbot logic is ma
 ## Challenges I ran into
 I initially wanted the chat bot to respond to various individual questions while remembering the specific country being talked about. I tried for a while to mess around with the TravelBot's "contexts" (which I think this is how you're supposed to accomplish it). I even tried, mid-project, to switch to Google's implementation of a similar software: Dialogflow. However, I could not get either to work in the time I had. I've also never worked with any cloud service before. I spent many hours bug fixing things that would probably have been a very quick fix had I any previous knowledge on AWS. In the end I spent a lot of time fumbling around learning about webhooks/cloud services. 
 
-The thing I am most disappointed with is the SMS character limit.
+~The thing I am most disappointed with is the SMS character limit.~
 
 ## Accomplishments that I'm proud of
 I accomplished a version of what I originally had in mind that I am happy with. I also was able to dip my toe into a lot of different cloud based technologies that I'd never had the chance to work with before.
