@@ -15,10 +15,10 @@ I initially wanted the chat bot to respond to various individual questions while
 The thing I am most disappointed with is the SMS character limit.
 
 ## Accomplishments that I'm proud of
-This is my first time attending a hackathon, and I also decided to do a solo project. I'm quite happy with how well it turned out all things considered. It was challenging but that's part of what makes it fun for me.
+This is my first time attending a hackathon, and I also decided to do a solo project. I'm quite happy with how well it turned out all things considered.
 
 ## What I learned
-I learned a lot about AWS, and I now have a decent grasp of how chat support bots are implemented by various companies. 
+I learned a lot about various different AWS services, and I now have a better understanding of how chat support bots are implemented by various companies. 
 
 ## What's next for TravelBot
 I thought it would be cool if I added another intent to the Lex bot to fetch ticket prices for the country you are interested in. I would also like to build a way to send the full text message despite the SMS character limits. I think there might be a way to do it with AWS SNS+SQS.
