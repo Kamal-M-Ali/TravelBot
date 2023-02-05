@@ -26,7 +26,7 @@ I learned a lot about AWS, and I now have a decent grasp of how chat support bot
 I thought it would be cool if I added another intent to the Lex bot to fetch ticket prices for the country you are interested in.
 
 ### Datasets used:
-https://github.com/ilyankou/passport-index-dataset
-https://ourworldindata.org/explorers/coronavirus-data-explorer
-https://ourworldindata.org/explorers/population-and-demography
+https://github.com/ilyankou/passport-index-dataset <br>
+https://ourworldindata.org/explorers/coronavirus-data-explorer <br>
+https://ourworldindata.org/explorers/population-and-demography <br>
 https://www.kaggle.com/datasets/prasertk/public-holidays-in-every-country-in-2022?resource=download
