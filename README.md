@@ -10,11 +10,9 @@ You send a text message to a Twilio number, and after going though some dialogue
 I store the datasets on an AWS S3 bucket. The chatbot logic is made using AWS Lex V2. According to Amazon its a "service for building conversational interfaces for applications using voice and text. Amazon Lex V2 provides the deep functionality and flexibility of natural language understanding (NLU) and automatic speech recognition (ASR) so you can build highly engaging user experiences with lifelike, conversational interactions, and create new categories of products." I also do all the data parsing and send the "country travel report" using the Python library pandas from a AWS Lambda function. The SMS text integration is done with Twilio.
 
 ## Challenges I ran into
-I initially wanted the chat bot to respond to various individual while storing the country being talked about. I tried for a while to mess around with the TravelBot's "contexts" (which I think this is how you're supposed to accomplish it). I even tried, mid-project, to switch to Google's implementation of a similar software: Dialogflow. However, I could not get either to work in the time I had .
+I initially wanted the chat bot to respond to various individual while storing the country being talked about. I tried for a while to mess around with the TravelBot's "contexts" (which I think this is how you're supposed to accomplish it). I even tried, mid-project, to switch to Google's implementation of a similar software: Dialogflow. However, I could not get either to work in the time I had. I spent many hours bug fixing things that would probably have been a very quick fix had I any previous knowledge on AWS.
 
-I also have never worked with any cloud service before. So I spent a lot of time fumbling around learning about webhooks and how it all works. 
-
-Lastly, I spent many hours bug fixing things that would probably have been a very quick fix had I any previous knowledge on AWS.
+I've never worked with any cloud service before. So I spent a lot of time fumbling around learning about webhooks and how it all works. Finally, the thing I am most disappointed with is the SMS character limit.
 
 ## Accomplishments that I'm proud of
 I accomplished a version of what I originally had in mind that I am happy with. I also was able to dip my toe into a lot of different cloud based technologies that I'd never had the chance to work with before.
@@ -23,7 +21,7 @@ I accomplished a version of what I originally had in mind that I am happy with. 
 I learned a lot about AWS, and I now have a decent grasp of how chat support bots are implemented by various companies. 
 
 ## What's next for TravelBot
-I thought it would be cool if I added another intent to the Lex bot to fetch ticket prices for the country you are interested in.
+I thought it would be cool if I added another intent to the Lex bot to fetch ticket prices for the country you are interested in. I would also like to build a way to send the full text message despite the SMS character limits. I think there might be a way to do it with AWS SNS+SQS.
 
 <br>
 ### Datasets used:
