@@ -23,8 +23,7 @@ I learned a lot about AWS, and I now have a decent grasp of how chat support bot
 ## What's next for TravelBot
 I thought it would be cool if I added another intent to the Lex bot to fetch ticket prices for the country you are interested in. I would also like to build a way to send the full text message despite the SMS character limits. I think there might be a way to do it with AWS SNS+SQS.
 
-<br>
-## Datasets used: <br>
+### Datasets used:
 https://github.com/ilyankou/passport-index-dataset <br>
 https://ourworldindata.org/explorers/coronavirus-data-explorer <br>
 https://ourworldindata.org/explorers/population-and-demography <br>
