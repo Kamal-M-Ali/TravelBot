@@ -21,7 +21,7 @@ This is my first time attending a hackathon, and I also decided to do a solo pro
 I learned a lot about various different AWS services, and I now have a better understanding of how chat support bots are implemented by various companies. 
 
 ## What's next for TravelBot
-I thought it would be cool if I added another intent to the Lex bot to fetch ticket prices for the country you are interested in. I would also like to build a way to send the full text message despite the SMS character limits. I think there might be a way to do it with AWS SNS+SQS.
+I thought it would be cool if I added another intent to TravelBot to fetch ticket prices for the country you are interested in. I would also like to build a way to send the full text message despite the SMS character limits. I think there might be a way to do it with AWS SNS+SQS.
 
 ### Datasets used:
 https://github.com/ilyankou/passport-index-dataset <br>
