@@ -4,6 +4,9 @@ import pandas as pd
 from datetime import datetime
 import logging
 
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+
 def get_holiday_report(report, country, df):
     holidays = df.loc[df["Country"] == country]
     if holidays.empty:
@@ -59,33 +62,31 @@ def get_passport_report(report, country, df):
 
     passport_report = "Passport information:\n"
     response_map = {
-        "visa free": "This country has visa-free travel\n",
-        "visa on arrival": "This country grants visas on arrival (basically visa-free)\n",
-        "e-visa": "This country accepts an e-visa.\n",
-        "visa required": "A visa is required to visit this country.\n",
+        "visa free": "This country has wisa-free travel\n",
+        "visa on arrival": "This country grants wisas on arrival (basically wisa-free)\n",
+        "e-visa": "This country accepts an e-wisa.\n",
+        "visa required": "A wisa is required to visit this country.\n",
         "covid ban": "This country has covid restriction on people incoming from the U.S.\n",
         "no admission": "This country is not accepting visitors.\n",
     }
 
     req = visa["req"].values[0]
     if req in response_map:
-        return passport_report + f"\t{response_map[req]}"
+        passport_report += f"{response_map[req]}"
     else:
-        try:
-            number = int(req)
-            if number < -1:
-                return passport_report + "\t No visa required. (Assuming you live in the U.S.)\n"
-            else:
-                return passport_report + f"You get {number} visa free days.\n"
-        except ValueError:
-            return f"Failed to get passport data on {country}.\n"
+        if int(req) < -1:
+            passport_report = "" # they're inside the us
+        else:
+            passport_report += f"You get {req} wisa free days.\n"
+    
+    return passport_report
 
 def get_population_report(report, country, df):
     population = df.loc[df["Country name"] == country]
     if population.empty:
         return f"Failed to get population data on {country}.\n"
 
-    population_report = "Populaion data (2021):\n"
+    population_report = "Populaton data (2021):\n"
     total_population = population['Population'].values[0]
 
     population_report += f"<20: {(population[['Population of children under the age of 1', 'Population aged 1 to 4 years', 'Population aged 5 to 9 years', 'Population aged 10 to 14 years', 'Population aged 15 to 19 years']].values.sum() / total_population)*100:.2f}%\n"
@@ -114,21 +115,26 @@ def get_covid_report(report, country, df):
     return covid_report
 
 def lambda_handler(event, context):
+    logger.debug('## EVENT')
+    logger.info(event)
+    
     s3 = boto3.resource('s3')
     bucket = s3.Bucket('travelbotdata')
     dataset = {}
     
     for summ in bucket.objects.all():
         dataset[summ.key.split('.',1)[0]] = pd.read_csv(summ.get()['Body'])
-
+        
     country = event["sessionState"]["intent"]["slots"]["Country"]["value"]['interpretedValue'].lower()
     report = f"Travel Report on {country.capitalize()}:\n\n"
     report += get_holiday_report(report, country, dataset['holidays']) + '\n'
     report += get_passport_report(report, country, dataset['passport']) + '\n'
     report += get_population_report(report, country, dataset['population']) + '\n'
-    report += get_covid_report(report, country, dataset['owid-covid-latest'])
-    report += "*nan represents unavailable data"
-
+    report += get_covid_report(report, country, dataset['owid-covid-latest']) + '\n'
+    report += "\n*nan represents unavailable data"
+    
+    logger.info(report)
+    
     return {
         "sessionState": {
             "dialogAction": {
