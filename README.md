@@ -12,7 +12,7 @@ I store the datasets (4 .csv files) on an AWS S3 bucket. The chatbot logic is ma
 ## Challenges I ran into
 I initially wanted the chat bot to respond to various individual questions while remembering the specific country being talked about. I tried for a while to mess around with the TravelBot's "contexts" (which I think this is how you're supposed to accomplish it). I even tried, mid-project, to switch to Google's implementation of a similar software: Dialogflow. However, I could not get either to work in the time I had. I've also never worked with any cloud service before. I spent many hours bug fixing things that would probably have been a very quick fix had I any previous knowledge on AWS. In the end I spent a lot of time fumbling around learning about webhooks/cloud services. 
 
-The thing I am most disappointed with is the SMS character limit.
+The bug/challenge that took me the longest to fix was: Why were my reports were being generated (no errors in AWS) but I was seeing nothing in iMessage? I initially thought I was hitting a SMS character limit, but I reliezed that was not the case. I eventually narrowed it down to the word "visa." For some reason, whenever I included that word in the text messages everything would break. So that's why the bot says "wisa" instead.
 
 ## Accomplishments that I'm proud of
 This is my first time attending a hackathon, and I also decided to do a solo project. Managing my time was difficult, but I'm quite happy with how well it turned out, all things considered.
@@ -21,7 +21,7 @@ This is my first time attending a hackathon, and I also decided to do a solo pro
 I learned a lot about various different AWS services, and I now have a better understanding of how chat support bots are implemented by various companies. 
 
 ## What's next for TravelBot
-I thought it would be cool if I added another intent to TravelBot to fetch ticket prices for the country you are interested in. I would also like to build a way to send the full text message despite the SMS character limits (broken into chunks). I think there might be a way to do it with AWS SNS+SQS.
+I thought it would be cool if I added another intent to TravelBot to fetch ticket prices for the country you are interested in.
 
 ### Datasets used:
 https://github.com/ilyankou/passport-index-dataset <br>
